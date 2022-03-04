@@ -1,0 +1,19 @@
+
+button cant be pressed before game starts
+score display
+start game button then show stop game button
+random ligted button
+button cant be higlighted twice in a row
+if the higlighted button is pressed add score point
+if higlighted button changes without beign press => gameover 
+speed up system
+when stop-button is pressed shoe modal with total score
+when wrong button is pressed show modal with "GAME OVER" and total score.
+add sound at the end of the game
+
+if you missed 3 times game over;
+end message is coonditional depending on score
+
+player can recor its name
+top 10 scores are shown in the end of the game
+implement level show it
