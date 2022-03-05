@@ -1,0 +1,339 @@
+/*reset*/
+/*ALL this is made for phone applications*/
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255,239,239);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    /*
+    background-image: url("/Portfolio_web_page/images/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    */
+    background-color: rgb(66,95,116);   
+}
+
+
+img{
+    display: grid;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*HEADER*/
+header{
+    background-color: rgb(125,154,172);
+    display: flex;
+    flex-direction: column;
+}
+#menuBar {   
+    /*background-color: rgb(181, 224, 224);*/
+    min-width: 100%;
+    margin: auto;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 2%;
+}
+
+
+#logo {
+    margin-left: 5px;
+    font-size: 38px;
+    padding-right: 10px;
+}
+
+nav ul li{
+    display: inline;   
+}
+
+nav ul li a{
+    /*make the anchor area biger for clicks*/
+    padding: 5px;    
+}
+
+nav ul li a:hover{
+    background-color: rgb(206, 93, 93);  
+}
+
+/*Banner*/
+#heroBanner{
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#intro {
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 30%;
+}
+
+
+#welcome {
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 30%;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+/*Main*/
+main p {
+    padding: 50px;
+}
+
+article{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.send,
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(206, 93, 93);  
+    border-radius: 2%;
+}
+
+
+/*container of portfolio*/
+#projectSection {
+    background-color: rgb(33, 56, 71);
+}
+
+#portfolio {
+    background-color: rgb(125,154,172);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div .project {
+    margin: 20px;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    align-self: flex-start;  
+    border-style: groove;
+    border-color: black;
+    color: black;
+}
+
+.projectImg{
+    width: 75%;
+    height: 65%;
+    border-style: groove;
+    border-color: black;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    background-color: black;
+}
+
+
+.description {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    color: black;
+
+}
+
+.descriptionText {
+    padding-top: 5px;
+    color: black;
+}
+
+/*Skills*/
+#skillsBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    padding-bottom: 100px;
+}
+
+
+
+.skill {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.skill img {
+
+    width: 50px;
+    height: 50px;
+    margin: 5px; 
+}
+
+
+.skill p {
+    padding: 0;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(6, 30, 51);
+}
+
+
+#conctactSection {
+    padding-top: 50px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    color: black;
+}
+
+#conctactSection p {
+    padding: 50px;
+}
+
+.icon {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#emailActual {
+    padding: 0;
+}
+
+#leaveSms{
+    padding: 0;
+}
+
+form div {
+    padding-bottom: 10px;
+}
+
+.send{
+    margin: 10px;
+}
+
+#some{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#some img {
+    padding: 20px;
+}
+
+.some{
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+#licenseSection {
+    min-height: 200px;
+    background-color: rgb(2, 19, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.scrollUp {
+    background-color: rgb(240,255,255);
+}
+
+
+.scrollUp a{
+    color: rgb(16,51,81);
+}
+
+.scrollUp h1{
+    color: rgb(16,51,81);
+}
+
+
+#up {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/*I JUST COPY THIS CODE FROM INTERNET, (have no idea how it works)*/
+/*
+.fade-in {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+*/

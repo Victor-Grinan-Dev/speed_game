@@ -3,10 +3,7 @@
     margin: 0;
 }
 
-body{
-    /*background-color: rgb(175, 104, 104);*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 #game{
     height: 100vh;
@@ -14,6 +11,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkblue;
 }
 
 h1 {
@@ -54,11 +53,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+#overlay h3{
+    color: darkblue;
 }
 
 #modal{
     background-color: antiquewhite;
+    color: darkblue;
     position: relative;
     width: 40%;
     min-height: 25%;
@@ -68,13 +71,18 @@ h1 {
     flex-direction: column;
     border-radius: 5px;
 }
+#modal p{
+    color: darkblue;
+}
+
 
 #closeOverlay{
     position: absolute;
     right: 0;
     top: 0;
     margin: 5px;
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0);
+    color: darkblue;
     border: none;
 }
 
