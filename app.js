@@ -63,7 +63,7 @@ const clicked = (circle) => {
         }else{
             score++;
             rounds--
-            scoreText.textContent = score;
+            scoreText.textContent = `Score: ${score}` ;
             clickGiven = true;
             
         }
