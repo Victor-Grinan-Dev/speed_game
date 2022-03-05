@@ -1,219 +1,209 @@
 /*reset*/
-/*ALL this is made for phone applications*/
 *{
-    margin: 0;
-    padding: 0;
     color: rgb(255,239,239);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 
 body{
-    /*
-    background-image: url("/Portfolio_web_page/images/forest.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    */
-    background-color: rgb(66,95,116);   
+    background-color: rgb(66,95,116); 
+    display: flex;  
+    flex-direction: column;
+    max-width: 98vw;
 }
-
-
-img{
-    display: grid;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
-}
-
 /*HEADER*/
 header{
     background-color: rgb(125,154,172);
     display: flex;
+    height: 100vh;
     flex-direction: column;
 }
-#menuBar {   
-    /*background-color: rgb(181, 224, 224);*/
-    min-width: 100%;
-    margin: auto;
+
+h1 {
+    font-size: 38px;
+}
+
+#menuBar {  
+    align-items: center;    
+    display: flex;
     height: 100px;
+    justify-content: space-between;
     position: fixed;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 98vw;
     z-index: 1;
 }
 
-a {
-    text-decoration: none;
-    border-radius: 2%;
-}
-
-
 #logo {
     margin-left: 5px;
-    font-size: 38px;
     padding-right: 10px;
+}
+
+/*Navbar*/
+a {
+    border-radius: 3%;
+    text-decoration: none;
 }
 
 nav ul li{
     display: inline;   
 }
 
-nav ul li a{
-    /*make the anchor area biger for clicks*/
-    padding: 5px;    
+nav ul li a{  
+    padding: 5px;  
 }
 
 nav ul li a:hover{
     background-color: rgb(206, 93, 93);  
 }
 
+/*scrolling nav bar animation*/
+.scrollUp {
+    background-color: rgb(240,255,255);
+}
+
+.scrollUp a{
+    color: rgb(16,51,81);
+}
+
+#mobileButton{
+    background-image: url("common_images/hamburgerShortWhite.png");
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.scrollUp #mobileButton{  
+    color: rgb(6, 30, 51);
+    background-image: url("common_images/hamburgerShortBlue.png");
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.scrollUp h1{
+    color: rgb(6, 30, 51);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#mobileButton {
+    display: none;
+  }
+  
+  @media (max-width: 576px) {
+
+    #mobileButton{
+        right: 20px;
+    }
+
+    #menubar{
+        max-width: 100vw;
+    }
+
+    nav .responsive {
+        max-width: 97vw;
+    }
+
+    #mobileButton {
+        background-color: transparent;
+        border: none;
+        display: block;
+        right: 20px;
+    }
+
+    nav ul {
+      display: none;
+    }
+  
+    nav.responsive ul {
+      background-color: white;
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 85px;
+      width: 97vw;
+    }
+  
+    nav.responsive ul li {
+      display: block;
+    }
+  
+    nav.responsive a {
+      color: rgb(6, 30, 51);
+      display: block;
+    }
+  }
+/*back up btn*/
+#up {
+    bottom: 20px;
+    position: fixed;
+    right: 50px;
+}
+
 /*Banner*/
 #heroBanner{
-    min-height: 700px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-height: 700px;
 }
 
 #intro {
     align-items: center;
     padding-top: 200px;
-    padding-left: 30%;
 }
-
 
 #welcome {
-    align-items: center;
-    padding-top: 0px;
-    padding-left: 30%;
     padding-bottom: 50px;
-}
-
-h1 {
-    font-size: 52px;
 }
 
 /*Main*/
-main p {
-    padding: 50px;
+
+img{
+    display: grid;
+    max-width: 97.5vw;
 }
 
 article{
+    padding-bottom: 50px;
     padding-top: 100px;
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .send,
 button {
-    padding: 20px;
+    background-color: rgb(206, 93, 93); 
     border: none;
-    background-color: rgb(206, 93, 93);  
     border-radius: 2%;
-}
-
-
-/*container of portfolio*/
-#projectSection {
-    background-color: rgb(33, 56, 71);
-}
-
-#portfolio {
-    background-color: rgb(125,154,172);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-div .project {
-    margin: 20px;
-    background-color: white;
-    width: 300px;
-    height: 350px;
-    align-self: flex-start;  
-    border-style: groove;
-    border-color: black;
-    color: black;
-}
-
-.projectImg{
-    width: 75%;
-    height: 65%;
-    border-style: groove;
-    border-color: black;
-    position: relative;
-    left: 35px;
-    top: 10px;
-    background-color: black;
-}
-
-
-.description {
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-}
-
-.subtitle {
-    color: black;
-
-}
-
-.descriptionText {
-    padding-top: 5px;
-    color: black;
-}
-
-/*Skills*/
-#skillsBoxes {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 90px;
-    padding-bottom: 100px;
-}
-
-
-
-.skill {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-
-.skill img {
-
-    width: 50px;
-    height: 50px;
-    margin: 5px; 
-}
-
-
-.skill p {
-    padding: 0;
+    padding: 20px;
 }
 
 /*Footer*/
-
 footer {
     background-color: rgb(6, 30, 51);
 }
 
+.email {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
 #conctactSection {
-    padding-top: 50px;
-    text-align: center;
+    align-items: center;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    padding-top: 50px;
+    text-align: center;
 }
 
 input {
-    color: black;
+    color: rgb(6, 30, 51);
 }
 
 #conctactSection p {
@@ -221,17 +211,13 @@ input {
 }
 
 .icon {
-    padding: 0;
-    margin: 0;
-    width: 25px;
     height: 25px;
+    margin: 0;
+    padding: 0;
+    width: 25px;  
 }
 
-.email {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 #emailActual {
     padding: 0;
@@ -250,90 +236,25 @@ form div {
 }
 
 #some{
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#some img {
-    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .some{
-    padding: 0;
-    margin: 0;
-    width: 25px;
-    height: 25px;
     display: inline-block;
+    height: 25px;
+    padding: 20px;
+    width: 25px;
 }
 
 #licenseSection {
-    min-height: 200px;
-    background-color: rgb(2, 19, 34);
+    align-items: center;
+    background-color: rgb(6, 30, 51);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-
+    min-height: 200px;
 }
-
-.scrollUp {
-    background-color: rgb(240,255,255);
-}
-
-
-.scrollUp a{
-    color: rgb(16,51,81);
-}
-
-.scrollUp h1{
-    color: rgb(16,51,81);
-}
-
-
-#up {
-    position: fixed;
-    bottom: 20px;
-    right: 50px;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-/*I JUST COPY THIS CODE FROM INTERNET, (have no idea how it works)*/
-/*
-.fade-in {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-  }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-*/

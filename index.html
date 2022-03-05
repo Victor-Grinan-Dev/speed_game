@@ -3,24 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common_style.css">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
     <title> Speed Game </title>
 </head>
 <body>
@@ -40,37 +26,40 @@
             </div> 
             <nav class="responsive">
 
-                <!--<button class="menu" id="mobButton">Menu</button>-->
+                <button id="mobileButton">
+                    
+                    <!--<span class="material-icons"> menu </span>-->
+                </button>
                 
                 <ul>
                     <li><a href="https://victor-python.github.io/Portfolio_web_page/">Home</a></li>
-                    <li><a href=""> 《 </a></li>
-                    <li><a href="#starter">Project</a></li>
-                    <li><a href=""> 》</a></li>
+                    <li><a href=""> 《 Back </a></li>
+                    <li><a href="#starter">Goto Project</a></li>
+                    <li><a href=""> Next 》</a></li>
                     <li><a href="https://www.bc.fi/?sgclid=CjwKCAiAgbiQBhAHEiwAuQ6Bkr5THOt4DfqX4mz_e1O6WBURiBQcHFbgeelyfIXyITuybfpFCgFI6RoCjrEQAvD_BwE" target="blank">HBC</a></li>
-                    <li><a href="#conctactSection">Conctact</a></li>
+                    <li><a href="#conctactSection" id="conctactNavBtn"> Conctact </a></li>
                 </ul>
             </nav>
         </section>
         <section id="heroBanner">
   
             <div id="intro">
-                <h4>School Project - 006:</h4>
+                <h4> Scool project - 006: </h4>
             </div>
 
             <div id="welcome" class="invisible pageTitle">
                 
-                <h1>"Speed Game"</h1>
+                <h1> "Speed Game" </h1>
             </div>
         </section>
         
     </header>
+    <div class="imgBox">
+        <img src="common_images/bigred.JPG" alt="pic" class="pic" class="sectionPic">
+    </div>
 
+    <main id="starter">
 
-    <main>
-        <div class="imgBox" id="starter">
-            <img src="/common_img/topHexes.jpg" alt="pic" class="pic" class="sectionPic">
-        </div>
         
         <section id="content">
             
@@ -106,7 +95,7 @@
     </main>
 
     <div class="imgBox">
-        <img src="/common_img/huge_hexes.jpg" alt="pic" class="pic" class="sectionPic">
+        <img src="common_images/bigredreversed.jpg" alt="pic" class="pic" class="sectionPic">
     </div>
 
     <footer>
@@ -164,17 +153,32 @@
                 </div>
             </section>
 
+            <!--
+
+            <section id="profilePicsCollage">
+                <div id="red" class="portrait"></div>
+                <div id="blue" class="portrait"></div>
+                <div id="yellow" class="portrait"></div>
+                <div id="green" class="portrait"></div>
+                <div id="orange" class="portrait"></div>
+                <div id="purple" class="portrait"></div>
+            </section>
+
+            -->
+
             <section id="licenseSection">
-                <p id="legal">Copyrights &copy; 2022</p>
+                <p id="legal">Copyrights &copy 2022</p><!-- ;  -->
                 <p id="love">Made with ❤️ in Finland</p>
             </section>
 
             <button id="up" class="invisible">up</button>
 
-    </footer>
-
-    <script src="main.js"></script>
-    <script src="common_main.js"></script>
+        </footer>
     
+    <script src="common_main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
+
+
+
