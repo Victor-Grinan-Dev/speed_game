@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(175, 104, 104);
+    /*background-color: rgb(175, 104, 104);*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -39,7 +39,7 @@ h1 {
 
 #stop, #start{
     border: none;
-    background-color: rgb(175, 104, 104);
+    /*background-color: rgb(175, 104, 104);*/
 }
 
 #stop{
