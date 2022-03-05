@@ -53,11 +53,17 @@ h1 {
 }
 
 .modal{
-    background-color: antiquewhite;
-    width: 40%;
-    height: 40%;  
+    background-color: rgb(218, 221, 13);
+    width: 400px;
+    position: relative;
+    top: 40%;
+     
 }
 
 .invisible{
     visibility: hidden;
+}
+
+#stop{
+    display: none;
 }

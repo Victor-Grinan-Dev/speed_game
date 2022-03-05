@@ -12,13 +12,21 @@ const randomIndex = () => Math.floor(Math.random() * 4);
 
 let active = 0;
 let score = 0;
-let pace = 4000;
+let pace = 2000;
 let gameOn = false;
 let clickGiven = false;
 let rounds = 0;
 
-const startGame = () => {
+
+const start = () => {
     gameOn = true;
+    startGame();
+    startBtn.style.display = "none";
+    stopBtn.style.display = "inline-block"
+}
+
+const startGame = () => {
+    
     for (let i = 0; i < circles.length; i++){
         circles[i].style.pointerEvents = "auto";
     }
@@ -27,10 +35,12 @@ const startGame = () => {
     circles[nextActive].classList.toggle("active");
     circles[active].classList.remove("active");
 
-    active = nextActive;
+    if (gameOn == true){
+        active = nextActive;
     console.log("active", active + 1, "at index ", active)
-    timer = setTimeout(startGame, pace) 
-
+    timer = setTimeout(startGame, pace)
+    }
+     
     if (rounds >= 1) {
         stoptGame();
     }
@@ -76,6 +86,8 @@ const stoptGame = () => {
     overlay.classList.remove("invisible")
     modalText.textContent = score;
     gameOn = false;
+    startBtn.style.display = "inline-block";
+    stopBtn.style.display = "none";
 }
 
 const reloadGame = () => {
@@ -83,39 +95,8 @@ const reloadGame = () => {
 }
 
 closeOverlayBtn.addEventListener("click", reloadGame);
-startBtn.addEventListener("click", startGame);
+startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stoptGame); 
 
 
 console.log(randomIndex())
-
-
-
-
-/*
-let before;
-let currentCircle = circleButtons[randomIndex()];
-console.log("current: ", currentCircle.id)
-
-currentCircle.classList.add("higligthed");
-console.log("end current: ", currentCircle.id)
-//startGame()
-
-const displayClicked = (action) => {
-    console.log(action)
-}
-
-
-
-
-/*const one = document.querySelector("#one");
-const two = document.querySelector("#two");
-const three = document.querySelector("#three");
-const four = document.querySelector("#four"); */
-
-//const currentCircleNodeList = document.querySelectoraAll("circle-button")
-
-//Array.from(currentCircleNodeList).forEach(item => console.log(item))
-
-
-//const circleButtons = [one, two, three, four];
