@@ -1,12 +1,15 @@
 *{
-    box-sizing: content-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body{
+    background-color: rgb(175, 104, 104);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: darkgoldenrod;
+}
+
+#game{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,56 +17,67 @@ body{
 }
 
 h1 {
-    margin: 50px;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 #buttonsArea{
     display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.circle{
-    background-color: blue;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    margin: 10px;
-    pointer-events: none;
+    flex-direction:row;
 }
 
-#functionBtn{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.circle{
+    background-color: blue;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 .active {
     background-color: aqua;
 }
 
-#overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.521);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.modal{
-    background-color: rgb(218, 221, 13);
-    width: 400px;
-    position: relative;
-    top: 40%;
-     
-}
-
-.invisible{
-    visibility: hidden;
+#stop, #start{
+    border: none;
+    background-color: rgb(175, 104, 104);
 }
 
 #stop{
     display: none;
+}
+
+#overlay{
+    background-color: rgba(17, 17, 17, 0.692);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#modal{
+    background-color: antiquewhite;
+    position: relative;
+    width: 40%;
+    min-height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#closeOverlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    background-color: antiquewhite;
+    border: none;
+}
+
+.invisible{
+    visibility: hidden;
 }

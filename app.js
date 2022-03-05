@@ -5,7 +5,6 @@ const stopBtn = document.querySelector("#stop");
 
 const closeOverlayBtn = document.querySelector("#closeOverlay")
 const overlay = document.querySelector("#overlay");
-
 const circles = document.querySelectorAll(".circle");
 
 const randomIndex = () => Math.floor(Math.random() * 4);
@@ -84,7 +83,7 @@ const clicked = (circle) => {
 const stoptGame = () => {
     console.log("stop game")
     overlay.classList.remove("invisible")
-    modalText.textContent = score;
+    modalText.textContent = `Your max Score is: ${score}`;
     gameOn = false;
     startBtn.style.display = "inline-block";
     stopBtn.style.display = "none";

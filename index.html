@@ -8,30 +8,43 @@
     <title>Speed Game</title>
 </head>
 <body>
-    <h1>SPEED GAME</h1>
-    <p id="score">Score: 0</p>
-    <div id="buttonsArea">
-        <div class="circle active" id="one"></div>
-        <div class="circle" id="two"></div>
-        <div class="circle" id="three"></div>
-        <div class="circle" id="four"></div>
-    </div>
-    <div id="functionBtn">
 
-        <button class="button" id="start"> start </button>
-        <button class="button" id="stop"> stop </button>
-    </div>
+    <div id="game">
 
+        <h1>SPEED GAME</h1>
 
-    
-    <div id="overlay" class="invisible">
-        
-        <div id="modal">
-            <p id="modalMessage">massage</p>
-            <button id="closeOverlay">X</button>
+        <p id="score">Score: 0</p>
+        <div id="buttonsArea">
+            <div class="circle active" id="one"></div>
+            <div class="circle" id="two"></div>
+            <div class="circle" id="three"></div>
+            <div class="circle" id="four"></div>
         </div>
+        <div id="functionBtn">
+    
+            <button class="button" id="start"> start </button>
+            <button class="button" id="stop"> stop </button>
+        </div>
+    
+    
+    
+        <div id="overlay" class="invisible"> <!--class="invisible"-->
+            <div id="modal">
+                <h3>GAME OVER</h3>
+                <p id="modalMessage">Total score: 0</p>
+                <table>
+                    <thead>5 best scores</thead>
+                    <th>Name</th>
+                    <th>Pts</th>
 
+                </table>
+                <button id="closeOverlay">X</button>
+            </div>
+        </div>
     </div>
+    
+
+
     <script src="app.js"></script>
 </body>
 </html>
