@@ -7,11 +7,11 @@ const closeOverlayBtn = document.querySelector("#closeOverlay")
 const overlay = document.querySelector("#overlay");
 const circles = document.querySelectorAll(".circle");
 
-const randomIndex = () => Math.floor(Math.random() * 4);
+const randomIndex = () => Math.floor(Math.random() * 7);
 
 let active = 0;
 let score = 0;
-let pace = 2000;
+let pace = 1500;
 let gameOn = false;
 let clickGiven = false;
 let rounds = 0;
@@ -43,7 +43,7 @@ const startGame = () => {
     if (rounds >= 1) {
         stoptGame();
     }
-    pace -= 100;
+    pace -= 50;
     rounds++
 
     function pickNew(active) {
@@ -99,3 +99,45 @@ stopBtn.addEventListener("click", stoptGame);
 
 
 console.log(randomIndex())
+
+/* click on ".drum" even listener */
+for (let i = 0; i < document.querySelectorAll(".drum").length; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+        makeSound(this.id);
+        buttonAnimation(this.innerHTML);
+    });
+};
+
+const makeSound = (id) => {
+    switch (id) {
+        case "one":
+            const crash = new Audio("/sounds/crash.mp3");
+            crash.play();
+            break;
+        case "two":
+            const kick = new Audio("/sounds/kick.mp3");
+            kick.play();//dunno why is broken
+            break;
+        case "three":
+            const snare = new Audio("/sounds/snare.mp3");
+            snare.play();
+            break;
+        case "four":
+            const tom1 = new Audio("/sounds/tom-1.mp3");
+            tom1.play();
+            break;
+        case "five":
+            const tom2 = new Audio("/sounds/tom-2.mp3");
+            tom2.play();
+            break;
+        case "six":
+            const tom3 = new Audio("/sounds/tom-3.mp3");
+            tom3.play();
+            break;
+        case "seven":
+            const tom4 = new Audio("/sounds/tom-4.mp3");
+            tom4.play();
+            break;
+        default: console.log(buttonHtml);
+    };
+};
