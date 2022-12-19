@@ -5,12 +5,14 @@
 
 #game{
     height: 100vh;
+    width: 100vw; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: darkblue;
+    background-color: rgb(30, 27, 27);
+    color: azure;
 }
 
 h1 {
@@ -22,6 +24,14 @@ h1 {
     flex-direction:row;
 }
 
+.imageContainer{
+    height: 125px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 
 .circle{
     background-color: rgb(239, 239, 247);
@@ -34,6 +44,7 @@ h1 {
 .active {
     width: 120px;
     height: 120px;
+    box-shadow: 0 0 10px azure;
 }
 
 #stop, #start{
@@ -90,3 +101,11 @@ h1 {
     visibility: hidden;
 }
 
+.button{
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 30px;
+    box-shadow: 0 0 10px aliceblue;
+}

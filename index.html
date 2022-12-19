@@ -11,54 +11,6 @@
 </head>
 <body>
 
-    <header>
-
-        <section id="menuBar">
-            <div id="logo">
-                <a href="#"><h1>VG</h1></a>
-            <!-- BRANDING LOGO?
-                <a href="#">
-                    <h1 id="v">V</h1>
-                    <h1 id="g">G</h1>
-                    <h4  id="dev">Dev.</h4>
-                </a>
-            -->
-            </div> 
-            <nav>
-
-                <button id="mobileButton">
-                    
-                    <!--<span class="material-icons"> menu </span>-->
-                </button>
-                
-                <ul>
-                    <li><a href="https://victor-python.github.io/Portfolio_web_page/">Home</a></li>
-                    <li><a href="https://victor-python.github.io/toDoList/"> 《 Back </a></li>
-                    <li><a href="#starter">Goto Project</a></li>
-                    <li><a href="https://victor-python.github.io/diceRoller/"> Next 》</a></li>
-                    <li><a href="https://www.bc.fi/?sgclid=CjwKCAiAgbiQBhAHEiwAuQ6Bkr5THOt4DfqX4mz_e1O6WBURiBQcHFbgeelyfIXyITuybfpFCgFI6RoCjrEQAvD_BwE" target="blank">HBC</a></li>
-                    <li><a href="#conctactSection" id="conctactNavBtn"> Conctact </a></li>
-                </ul>
-            </nav>
-        </section>
-        <section id="heroBanner">
-  
-            <div id="intro">
-                <h4> Scool project - 006: </h4>
-            </div>
-
-            <div id="welcome" class="invisible pageTitle">
-                
-                <h1> "Speed Game" </h1>
-                <p id="readme">Tap the higlighted circle to test your speed.</p>
-            </div>
-        </section>
-        
-    </header>
-    <div class="imgBox">
-        <img src="common_images/bigred.JPG" alt="pic" class="pic" class="sectionPic">
-    </div>
-
     <main id="starter">
 
         
@@ -78,32 +30,41 @@
                     -->   
                     <div>
                         
-
-                        <img src="images/tom2.png" alt="#" class="circle drum" id="five">
+                        <div class="imageContainer">
+                            <img src="images/tom2.png" alt="#" class="circle drum" id="five">
+                        </div>
                         
-                        <img src="images/tom3.png" alt="#" class="circle drum" id="six">
+                        <div class="imageContainer">
+                            <img src="images/tom3.png" alt="#" class="circle drum" id="six">
+                        </div>
+                        
                         
                     </div>   
                     <div>
 
-                                                
-                        <img src="images/crash.png" alt="#" class="circle drum" id="one">
-
+                        <div class="imageContainer">
+                                                    
+                            <img src="images/crash.png" alt="#" class="circle drum" id="one">
+                        </div>
+                     
+                        <div class="imageContainer">
+                            <img src="images/snare.png" alt="#" class="circle drum" id="three">
+                        </div>
                         
-                        <img src="images/snare.png" alt="#" class="circle drum" id="three">
-                        
-                        <img src="images/kick.png" alt="#" class="circle drum" id="two">
+                        <div class="imageContainer">
+                            <img src="images/kick.png" alt="#" class="circle drum" id="two">
+                        </div>
 
                     </div>    
                     <div>
+                        <div class="imageContainer">
+                            <img src="images/tom1.png" alt="#" class="circle drum" id="four">
+                        </div>
 
-                        <img src="images/tom1.png" alt="#" class="circle drum" id="four">
-
-                        <img src="images/tom4.png" alt="#" class="circle drum" id="seven">
-
+                        <div class="imageContainer">
+                            <img src="images/tom4.png" alt="#" class="circle drum" id="seven">
+                        </div>
                     </div>       
-
- 
 
                 </div>
 
@@ -126,87 +87,6 @@
 
     </main>
 
-    <div class="imgBox">
-        <img src="common_images/bigredreversed.jpg" alt="pic" class="pic" class="sectionPic">
-    </div>
-
-    <footer>
-        <section id="conctactSection">
-            <h4>Thanks.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi error eos voluptas est in labore facilis, asperiores et deserunt consequuntur atque debitis dolore cupiditate.</p>
-            <div class="email">
-
-                <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
-                    <img src="common_icons/emai_color.png" alt="email" id="emailImg" class="icon">
-                </a>
-
-                    <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
-                        <p id="emailActual"> victorgrinan@gmail.com </p>
-                    </a>
-                </div>
-
-                <div>
-                    <form>
-                        <p id="leaveSms">Or leave a message here...</p>
-                        <div class="conctact">
-                            <label for="conctactName">Your Name:</label>
-                            <input type="text" name="conctactName" id="conctactName">
-                        </div>
-                        <div class="conctact">
-                            <label for="conctactEmail">Your email: </label>
-                            <input type="email" name="conctactEmail" id="conctactEmail">
-                        </div>
-                        <div class="conctact">
-                            <label for="message"></label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div class="conctact">
-                            <input type="submit" value="Send" class="send">
-                        </div>
-                    </form>
-                </div>
-
-                <div id="some">
-                    <a href="https://github.com/Victor-python" target="blank">
-                        <img src="common_icons/github_circle_white_border.com.png" alt="Github" class="some">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/victor-gri%C3%B1an-892a741b7/" target="blank">
-                        <img src="common_icons/Linkedin-logo-transparent-PNG.png" alt="Linked-in" class="some">
-                    </a>
-
-                    <a href="https://www.instagram.com/victor_grinan_dev/" target="blank">
-                        <img src="common_icons/instagram_color.com.png" alt="Instagram" class="some">
-                    </a>
-
-                    <a href="https://twitter.com/GrinanVictor" target="blank">
-                        <img src="common_icons/twitter_vector_color.com.png" alt="Twitter" class="some">
-                    </a>
-                </div>
-            </section>
-
-            <!--
-
-            <section id="profilePicsCollage">
-                <div id="red" class="portrait"></div>
-                <div id="blue" class="portrait"></div>
-                <div id="yellow" class="portrait"></div>
-                <div id="green" class="portrait"></div>
-                <div id="orange" class="portrait"></div>
-                <div id="purple" class="portrait"></div>
-            </section>
-
-            -->
-
-            <section id="licenseSection">
-                <p id="legal">Copyrights &copy 2022</p><!-- ;  -->
-                <p id="love">Made with ❤️ in Finland</p>
-            </section>
-
-            <button id="up" class="invisible">up</button>
-
-        </footer>
-    
     <script src="common_main.js"></script>
     <script src="main.js"></script>
 </body>
