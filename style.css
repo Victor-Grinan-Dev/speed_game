@@ -16,7 +16,7 @@
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 20rem;
 }
 
 #buttonsArea{
@@ -49,7 +49,6 @@ h1 {
 
 #stop, #start{
     border: none;
-    /*background-color: rgb(175, 104, 104);*/
 }
 
 #stop{
